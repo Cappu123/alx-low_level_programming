@@ -1,19 +1,17 @@
 #include "main.h"
 /**
  * print_most_numbers - check the code for Holberton School students.
+ *
  * Return: Always 0.
  */
 void print_most_numbers(void)
 {
-char c = '0';
+	char c;
+	for (c = '0'; c <= '9'; c++)
+	{
+		if(!(c =='2' || c == '4'))
+			_putchar(c);
+	}
+	_putchar('\n');
+}
 
-while (c <= '9')
-{
-if (c != '2' && c != '4')
-{
-_putchar(c);
-}
-c++;
-}
-_putchar('\n');
-}

@@ -2,10 +2,11 @@
 
 /**
  * This function multiplies two numbers
+ * Return: addition of the multiplication
  */
 
-*int mul(int a, int b)
+int mul(int a, int b)
 {
-	printf("%d\n", mul);
+	return (a * b);
 }
-return(0);
+
