@@ -1,5 +1,5 @@
-#include"main.h"
-#include<stdio.h>
+#include "main.h"
+#include <stdio.h>
 /**
  * This function takes an "int" pointer as parameter and
  * update the value it points to 98.
