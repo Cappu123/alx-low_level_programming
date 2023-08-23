@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * This function prints a string followed by a new line to stdout
- * Return: 0
- *
+ * _puts - updates the value it points to to 98
+ * @str: character value.
  */
 void _puts(char *str)
 {
