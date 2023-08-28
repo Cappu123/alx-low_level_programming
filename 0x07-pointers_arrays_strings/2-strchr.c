@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-/*@strchr: returns a pointer to the first occurance of the character
- * "c" in the string"s" or "NULL" if the character is not found.
- * @char *s the string characters
- * @char c: the caharacter inside the string.
- * Return: Always 0
+/**
+ * _strchr - locates a character in a string
+ * @s: the memory area
+ * @c: constant byte
+ *
+ * Return: a pointer when the character is found
  */
 char *_strchr(char *s, char c)
 {
