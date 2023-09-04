@@ -6,11 +6,10 @@
  * that runs on the command line
  * @argv - an array of strings which outputs the name of th
  * program
- * 
- * Return: 0 (Always Success)
+ * Return:(0) (Always Success)
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
@@ -18,5 +17,5 @@ int main(int argc, char* argv[])
 	{
 		printf("%s\n", argv[0]);
 	}
-	return 0;
+	return (0);
 }
