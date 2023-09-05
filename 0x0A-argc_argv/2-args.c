@@ -2,20 +2,20 @@
 #include "main.h"
 
 /**
- * argV - a program that prints all arguments it receives.
- * @arge: integer, number of arguments passed
- * @argw: an argument passed into the program
+ * main - a program that prints all arguments it receives.
+ * @argc: integer, number of arguments passed
+ * @argv: an argument passed into the program
  * Return: 0
  *
  */
 
-int argV(int arge, char *argw[])
+int main(int argc, char *argv[])
 {
 	int i;
 
-	for (i = 0; i < arge; i++)
+	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", *argw);
+		printf("%s\n", argv[i]);
 	}
 	return (0);
 }

@@ -3,24 +3,16 @@
 
 /**
  * main - main function
- * nargs - a program that prints the number of arguments
- * passed into it followed by a new line
- * @argd: a program that counts and outputs the number
- * of arguments passed into the program
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
  * Return: (0) (Always success)
  *
  */
-int main(void)
+int main(int argc, char *argv[])
 {
+	(void) argv;
+	printf("%d\n", argc - 1);/*Ignore argv*/
 
-	int nargs(int argd)
-	{
-		int i;
-
-		for (i = 0; i < argd i++)
-		{
-			printf("%d\n", argd);
-		}
-		return (0);
-	}
+	return (0);
 }
