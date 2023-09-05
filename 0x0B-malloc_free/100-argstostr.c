@@ -4,6 +4,8 @@
  * argstostr -main entry
  * @ac: input input
  * @av: double pointer array
+ * @height: argument
+ * free_grid - function name
  *
  */
 void free_grid(int **grid, int height)
@@ -21,7 +23,8 @@ void free_grid(int **grid, int height)
 	}
 	l += ac;
 
-	str = malloc(sized of (char) * l + 1);
+	str = malloc(sizeof(char) * l + 1);
+
 	if (str == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
@@ -33,7 +36,7 @@ void free_grid(int **grid, int height)
 		}
 
 		if (str[r] == '\0')
-		{		
+		{
 			str[r++] = '\n';
-		}	
-}
+		}
+	}
