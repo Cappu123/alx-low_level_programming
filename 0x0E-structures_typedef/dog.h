@@ -1,5 +1,5 @@
-#ifndef _dog_h_
-#define _dog_h_
+#include <stdlib.h>
+#include "dog.h"
 
 /**
  * struct dog - such structure, wow
@@ -8,20 +8,11 @@
  * @owner: dog's owner
  */
 
-typedef struct dog
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	char *name;
-	float age;
-	char *owner;
+	if (d == NULL)
+		d = malloc(sizeof(struct dog));
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }
-dog _t;
-
-void init_dog(struct dog *d, char *name, float age, char *owner);
-
-void print_dog(struct dog *d);
-
-dog_t *new_dog(char *name, float age, char *owner);
-
-void free_dog(dog_t *d);
-
-#endif /* _dog_h_ */
