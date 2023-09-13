@@ -20,9 +20,9 @@ struct dog
 
 typedef struct dog _dog_t;
 
-void ini_dog(struct dog * d, char * name, float age, char * owner);
-void print_dog(struct dog * d);
-dog_t * new_dog(char * name, float age, char * owner);
-void free_dog(dog_t * d);
+void ini_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char * wner);
+void free_dog(dog_t *d);
 
 #endif
