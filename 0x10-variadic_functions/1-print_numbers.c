@@ -1,4 +1,7 @@
 #include "variadic_functions.h"
+#include "stdlib.h"
+#include "stddef.h"
+#include "stdio.h"
 
 /**
  * print_numbers - entry point
