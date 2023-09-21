@@ -2,17 +2,17 @@
 
 /**
  * free_list - frees a list_t list.
- * @head: pointer to struct
+ * @head: head of the linked list.
+ * Return: no return
  */
 void free_list(list_t *head)
 {
-	list_t *tmp;
+	list_t *current_node;
 
-	while (head != NULL)
+	while ((current_node = head) != NULL)
 	{
-		tmp = head;
 		head = head->next;
-		free(tmp->str);
-		free(tmp);
+		free(current_node->str);
+		free(current_node);
 	}
 }
