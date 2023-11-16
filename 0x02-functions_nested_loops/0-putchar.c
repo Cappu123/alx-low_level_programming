@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main-print_putchar
+ * main print_putchar
  * is written by cappy
  * return: 0
  */
