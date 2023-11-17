@@ -5,10 +5,8 @@
  *
  * Return: Always 0 (Success)
  */
-int main(const char *s)
+int main(void)
 {
-	*s = "Programming is like building a multilingual puzzle";
-	puts(s);
-	puts(\n);
+	puts("\"Programming is like building a multilingual puzzle";)
 	return (0);
 }
