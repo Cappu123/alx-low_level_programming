@@ -9,13 +9,13 @@ int main(void)
 {
 	int c, i;
 
-	for (c = 0; c <= 9; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
 
-		for (i = 0; i <= 9; i++)
+		for (i = '0'; i <= '9'; i++)
 		{
 	
-			if (c < i)
+			while (c < i)
 			{
 				putchar(c);
 				putchar(i);
