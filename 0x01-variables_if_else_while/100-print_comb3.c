@@ -14,18 +14,19 @@ int main(void)
 
 		for (i = '0'; i <= '9'; i++)
 		{
-			while (c < i)
+			if (c < i)
 			{
 				putchar(c);
 				putchar(i);
 				
 				if (c != '8' && i != '9')
-								
-				putchar(',');
-				putchar(' ');
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
