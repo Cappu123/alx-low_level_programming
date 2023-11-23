@@ -1,21 +1,24 @@
 #include "main.h"
 
 /**
- * main - entry function
+ * print_alphabet_x10 - entry function
+ *
  *
  * Return: NULL
  */
 
 void print_alphabet_x10(void)
 {
-	int i = 'a';
-
-	int j = 10 * i;
+	int i;
+	int j = 1;
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(j);
+		_putchar(i);
+		while (j < 11)
+		{
+			i++;
+		}
 		_putchar('\n');
-	}
-	
+	}	
 }
