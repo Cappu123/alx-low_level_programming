@@ -3,17 +3,19 @@
 /**
  * main - entry function
  *
- * Return: Always 0
+ * Return: NULL
  */
 
 void print_alphabet(void)
 {
-	for (int i = 'a'; i <= 'z'; i++)
+	int i;
+
+	for (i = 'a'; i <= 'z'; i++)
 	{
 		int j = 10 * i;
 
 		_putchar(j);
 		_putchar('\n');
 	}
-	return (0);
+	
 }
