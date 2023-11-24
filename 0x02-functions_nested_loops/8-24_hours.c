@@ -8,18 +8,28 @@
 #include "main.h"
 void jack_bauer(void)
 {
-	int h, m;
+	int h = 0;
 
-	for (h = 0; h < 24; h++)
+	while (h < 24)
 	{
-		for (m = 0; m < 60; m++)
+		if (h < 10)
 		{
-			_putchar((h / 10) + '0');
-			_putchar((h % 10) + '0');
-			_putchar(':');
-			_putchar((m / 10) + '0');
-			_putchar((m % 10) + '0');
-			_putchar((m % 10) + '0');
+			_putchar('0' + h + ':');
+		}
+		_putchar(h + ':');
+		h++;
+
+		int m = 0;
+
+		while (m < 60)
+		{
+			if (m < 10)
+			{
+				_putchar('0' + m);
+			}
+			_putchar(m);
+			m++;
 		}
 	}
+	return (0);
 }
