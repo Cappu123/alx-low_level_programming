@@ -8,7 +8,7 @@
 #include "main.h"
 void jack_bauer(void)
 {
-	int h = 0;
+	int m, h = 0;
 
 	while (h < 24)
 	{
@@ -19,7 +19,7 @@ void jack_bauer(void)
 		_putchar(h + ':');
 		h++;
 
-		int m = 0;
+		m = 0;
 
 		while (m < 60)
 		{
@@ -31,5 +31,4 @@ void jack_bauer(void)
 			m++;
 		}
 	}
-	return (0);
 }
