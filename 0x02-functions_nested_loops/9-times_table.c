@@ -5,7 +5,7 @@
  * add extra space past single digit
  */
 #include "main.h"
-void times_tavle(void)
+void times_table(void)
 {
 	int rone, cone, d;
 
