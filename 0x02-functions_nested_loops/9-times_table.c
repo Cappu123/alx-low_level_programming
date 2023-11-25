@@ -7,7 +7,7 @@
 #include "main.h"
 void times_tavle(void)
 {
-	int rone, int  cone, int d;
+	int rone, cone, d;
 
 	for (rone = 0; rone <= 9; rone++)
 	{
