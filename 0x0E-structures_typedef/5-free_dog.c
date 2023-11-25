@@ -1,17 +1,16 @@
-#include <stdlib.h>
 #include "dog.h"
 
 /**
- * free_dog - initialize a variable of type struct dog
- * @d: dog's details
- */
-
+*free_dog - Frees dog
+*@d: dog to be freed
+*
+*/
 void free_dog(dog_t *d)
 {
-	if (d)
-	{
-		free(d->name);
-		free(d->owner);
-		free(d);
-	}
+	if (d == NULL)
+	return;
+
+free(d->name);
+free(d->owner);
+free(d);
 }
