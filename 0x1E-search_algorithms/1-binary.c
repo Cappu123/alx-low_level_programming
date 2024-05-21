@@ -14,20 +14,21 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1);
 
-	if (size >= 2) {
-		unsigned int k = size / 2;
-	int i = 0;
-
-	while (i < k)
+	if (size >= 2) 
 	{
+		unsigned int k = size / 2;
+		int i = 0;
+
+		while (i < k)
+		{
+			printf("Found %d at index: %d\n", i, array[i]);
+			if (array[i] == value)
+				return (i);
+				break;
+		}
 		printf("Found %d at index: %d\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
-		break;
-	}
-	printf("Found %d at index: %d\n", i, array[i]);
-	if (array[i] == value)
-		return (i);
 	}
 	return (-1);
 }
